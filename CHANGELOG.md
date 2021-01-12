@@ -1,0 +1,10 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.2.0](https://github.com/brucegroverlee/moregooder/compare/v0.1.1...v1.2.0) (2021-01-12)
+
+
+### Features
+
+* **context:** set user session [ch54] ([39bc92f](https://github.com/brucegroverlee/moregooder/commit/39bc92f82d0ec2e480fedbc25bf3eb5fc64a0e08))
