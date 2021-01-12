@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/brucegroverlee/moregooder/compare/v1.2.0...v1.3.0) (2021-01-12)
+
+
+### Features
+
+* **layout:** layout [ch55] ([d8e5168](https://github.com/brucegroverlee/moregooder/commit/d8e5168cf28e6bc6bddc04bc49c4b118491c9da4))
+
 ## [1.2.0](https://github.com/brucegroverlee/moregooder/compare/v0.1.1...v1.2.0) (2021-01-12)
 
 
