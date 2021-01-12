@@ -5,6 +5,8 @@ import './styles/bootstrap.css';
 import './styles/bootstrap-extended.css';
 import './styles/colors.css';
 import './styles/components.css';
+import './styles/vertical-menu.css';
+import './styles/flag-icon-css/css/flag-icon.css';
 import 'boxicons/css/boxicons.css';
 import Router from './infrastructure/containers/Router';
 import reportWebVitals from './reportWebVitals';

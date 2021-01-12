@@ -10,7 +10,7 @@ export const UserContext = React.createContext<UserState>([null, () => ({})]);
 export const useUser = () => {
   const context = React.useContext(UserContext);
   const [user, setUser] = context;
-  return { user, setUser, }
+  return { user, setUser, };
 }
 
 export const UserProvider: React.FunctionComponent = (props) => {
