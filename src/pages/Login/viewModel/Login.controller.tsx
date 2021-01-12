@@ -2,8 +2,9 @@ import React from 'react';
 import { IAuthService } from '../useCases/ports/IAuthService';
 import { loginWithSocial } from '../useCases/loginWithSocial';
 import { loginWithEmail } from '../useCases/loginWithEmail';
-import { LoginPresenterFactory } from '../adapters/LoginPresenter';
+import { LoginPresenter } from '../adapters/LoginPresenter';
 import useLoginHook from './login.hook';
+import { useUser } from '../../shared/contexts/user';
 import { LoginHtml } from './Login.html';
 
 function setBody() {
@@ -31,7 +32,8 @@ export const LoginController: React.FunctionComponent<ILoginControllerProps> = (
     errorMessage,
     setErrorMessage,
   } = useLoginHook();
-  const presenter = LoginPresenterFactory.getLoginPresenter(setLoading, setErrorMessage);
+  const { setUser } = useUser();
+  const presenter = new LoginPresenter(setLoading, setErrorMessage, setUser);
   const loginWithGoogleHandle = loginWithSocial(props.googleAuthService, presenter);
   const loginWithFacebookHandle = loginWithSocial(props.facebookAuthService, presenter);
   const loginWithEmailHandle = loginWithEmail(props.emailAuthService, presenter);

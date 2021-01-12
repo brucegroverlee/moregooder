@@ -1,0 +1,1 @@
+type IDType = number;

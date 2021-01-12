@@ -8,10 +8,13 @@ import './styles/components.css';
 import 'boxicons/css/boxicons.css';
 import Router from './infrastructure/containers/Router';
 import reportWebVitals from './reportWebVitals';
+import { UserProvider } from './pages/shared/contexts/user';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router />
+    <UserProvider>
+      <Router />
+    </UserProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
