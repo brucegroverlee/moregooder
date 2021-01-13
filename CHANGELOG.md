@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/brucegroverlee/moregooder/compare/v1.3.0...v1.3.1) (2021-01-13)
+
+
+### Docs
+
+* **storybook:** add storybook ([869c82f](https://github.com/brucegroverlee/moregooder/commit/869c82fe727623e63f8bb839b1995ee2e1e6a070))
+
 ## [1.3.0](https://github.com/brucegroverlee/moregooder/compare/v1.2.0...v1.3.0) (2021-01-12)
 
 
