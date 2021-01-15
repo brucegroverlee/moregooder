@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/brucegroverlee/moregooder/compare/v1.3.2...v1.4.0) (2021-01-15)
+
+
+### Features
+
+* **home:** home [ch55] ([f917566](https://github.com/brucegroverlee/moregooder/commit/f91756686aa6d8ad942951a4cafb6d7e4675dddb))
+
 ### [1.3.2](https://github.com/brucegroverlee/moregooder/compare/v1.3.1...v1.3.2) (2021-01-15)
 
 
