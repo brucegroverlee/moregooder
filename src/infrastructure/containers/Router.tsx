@@ -10,7 +10,12 @@ const Login = lazy(() => import('../../pages/Login/index') );
 
 //const layout = lazy(() => import('./Layout') );
 
-const Default = lazy(() => import('../../pages/default/App') );
+const Home = lazy(() => import('../../pages/Home') );
+const Texting = lazy(() => import('../../pages/Texting') );
+const Contacts = lazy(() => import('../../pages/Contacts') );
+const ContactsCreate = lazy(() => import('../../pages/ContactsCreate') );
+const Forms = lazy(() => import('../../pages/Forms') );
+const FormsCreate = lazy(() => import('../../pages/FormsCreate') );
 
 const AppRouter: React.FunctionComponent = () => {
   return (
@@ -29,8 +34,33 @@ const AppRouter: React.FunctionComponent = () => {
           />
           <Route
             exact
+            path="/texting"
+            component={layout(Texting)}
+          />
+          <Route
+            exact
+            path="/contacts"
+            component={layout(Contacts)}
+          />
+          <Route
+            exact
+            path="/contacts/create"
+            component={layout(ContactsCreate)}
+          />
+          <Route
+            exact
+            path="/forms"
+            component={layout(Forms)}
+          />
+          <Route
+            exact
+            path="/forms/create"
+            component={layout(FormsCreate)}
+          />
+          <Route
+            exact
             path="/"
-            component={layout(Default)}
+            component={layout(Home)}
           />
         </Suspense> 
       </Switch>

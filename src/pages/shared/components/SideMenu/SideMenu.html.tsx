@@ -20,7 +20,7 @@ export const SideMenuHtml: React.FunctionComponent = () => {
 
       <div className="main-menu-content">
         <ul className="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="lines">
-          
+
           <SideMenuItem
             language={'en'}
             defaultText={'Home'}
