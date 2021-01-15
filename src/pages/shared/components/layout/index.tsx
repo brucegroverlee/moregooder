@@ -6,7 +6,7 @@ const SideMenu = lazy(() => import('../SideMenu/SideMenu.controller'));
 
 
 function setBody() {
-  window.document.body.className = 'vertical-layout vertical-menu-modern 2-columns  navbar-sticky footer-static';
+  window.document.body.className = 'vertical-layout vertical-menu-modern 2-columns  navbar-sticky footer-static menu-expanded';
   window.document.body.dataset.open = 'click';
   window.document.body.dataset.menu = 'vertical-menu-modern';
   window.document.body.dataset.col = '2-columns';
