@@ -1,5 +1,3 @@
-import { IUser } from '../../../shared/entities/IUser';
-
 export interface ILoginPresenter {
   startLoading(): void;
   stopLoading(): void;

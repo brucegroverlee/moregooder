@@ -1,4 +1,3 @@
-import { IUser } from '../../shared/entities/IUser';
 import { IAuthService } from '../useCases/ports/IAuthService';
 
 export class GoogleAuthService implements IAuthService {
