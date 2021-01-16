@@ -1,4 +1,5 @@
 import React from 'react';
+import Avatar from 'react-avatar';
 
 interface IHeaderHtmlProps {}
 
@@ -55,7 +56,11 @@ export const HeaderHtml: React.FunctionComponent<IHeaderHtmlProps> = (props) => 
                               <span className="user-status text-muted">Available</span>
                             </div>
                             <span>
-                              <img className="round" src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"/>
+                            <Avatar 
+                              name={"John Doe"}
+                              size={"40px"}
+                              round
+                            />
                             </span>
                             </a>
                           <div className="dropdown-menu dropdown-menu-right pb-0">

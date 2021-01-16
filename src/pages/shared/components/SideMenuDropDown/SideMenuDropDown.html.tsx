@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { IItem, Item } from './components/Item';
+import { Item } from './components/Item';
 
 interface ISideMenuDropDownHtmlProps {
   language: string;

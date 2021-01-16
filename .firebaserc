@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "moregooder"
+  },
+  "targets": {
+    "moregooder": {
+      "hosting": {
+        "production": [
+          "more-gooder"
+        ],
+        "staging": [
+          "more-gooder-staging"
+        ]
+      }
+    }
+  }
+}

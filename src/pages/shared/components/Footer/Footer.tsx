@@ -9,8 +9,7 @@ export const Footer: React.FunctionComponent = () => {
         <span className="float-right d-sm-inline-block d-none">
           Crafted with
           <i className="bx bxs-heart pink mx-50 font-small-3"></i>
-          by
-          <a className="text-uppercase" href="https://1.envato.market/pixinvent_portfolio" target="_blank" rel="noreferrer">Pixinvent</a>
+          by MGF
         </span>
         
         <button className="btn btn-primary btn-icon scroll-top" type="button">
