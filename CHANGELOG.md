@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.3](https://github.com/brucegroverlee/moregooder/compare/v1.4.2...v1.4.3) (2021-01-16)
+
+
+### CI
+
+* **github:** fix the artifact name and path ([7cf84e4](https://github.com/brucegroverlee/moregooder/commit/7cf84e4a29d9554bd7fc4ab8c560d786bf98b5ce))
+
 ### [1.4.2](https://github.com/brucegroverlee/moregooder/compare/v1.4.1...v1.4.2) (2021-01-16)
 
 
