@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/brucegroverlee/moregooder/compare/v1.4.0...v1.4.1) (2021-01-16)
+
+
+### CI
+
+* **firebase:** add firebase and github actions ([013d1ce](https://github.com/brucegroverlee/moregooder/commit/013d1cef6afcd792bd38b8e7796b1f93f81608b6))
+
 ## [1.4.0](https://github.com/brucegroverlee/moregooder/compare/v1.3.2...v1.4.0) (2021-01-15)
 
 
