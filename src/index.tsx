@@ -12,6 +12,7 @@ import './styles/flag-icon-css/css/flag-icon.css';
 import Router from './infrastructure/containers/Router';
 import reportWebVitals from './reportWebVitals';
 import { UserProvider } from './pages/shared/contexts/user';
+import { LanguageProvider } from './pages/shared/contexts/language';
 import pkg from '../package.json';
 
 console.log(`${process.env.REACT_APP_APP_ENV} v${pkg.version}`);
@@ -19,7 +20,9 @@ console.log(`${process.env.REACT_APP_APP_ENV} v${pkg.version}`);
 ReactDOM.render(
   <React.StrictMode>
     <UserProvider>
-      <Router />
+      <LanguageProvider>
+        <Router />
+      </LanguageProvider>
     </UserProvider>
   </React.StrictMode>,
   document.getElementById('root')

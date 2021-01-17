@@ -1,17 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SideMenu.css';
 import { SideMenuItem } from '../SideMenuItem/SideMenuItem';
 import { SideMenuDropDown } from '../SideMenuDropDown/SideMenuDropDown.controller';
 
-export const SideMenuHtml: React.FunctionComponent = () => {
+interface SideMenuHtmlProps {
+  language: string;
+}
+
+export const SideMenuHtml: React.FunctionComponent<SideMenuHtmlProps> = (props) => {
   return(
     <div className="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
       <div className="navbar-header">
         <ul className="nav navbar-nav flex-row">
           <li className="nav-item mr-auto">
-            <a className="navbar-brand" href="../../../html/ltr/vertical-menu-template/index.html">
+            <Link className="navbar-brand" to={'/'}>
               <h2 className="brand-text mb-0">Moregooder</h2>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -22,7 +27,7 @@ export const SideMenuHtml: React.FunctionComponent = () => {
         <ul className="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="lines">
 
           <SideMenuItem
-            language={'en'}
+            language={props.language}
             defaultText={'Home'}
             texts={{
               en: 'Home',
@@ -36,7 +41,7 @@ export const SideMenuHtml: React.FunctionComponent = () => {
           </li>
 
           <SideMenuItem
-            language={'en'}
+            language={props.language}
             defaultText={'Texting'}
             texts={{
               en: 'Texting',
@@ -46,7 +51,7 @@ export const SideMenuHtml: React.FunctionComponent = () => {
           />
 
           <SideMenuDropDown
-            language={'en'}
+            language={props.language}
             defaultText={'Contacts'}
             texts={{
               en: 'Contacts',
@@ -74,7 +79,7 @@ export const SideMenuHtml: React.FunctionComponent = () => {
           />
 
           <SideMenuDropDown
-            language={'en'}
+            language={props.language}
             defaultText={'Forms'}
             texts={{
               en: 'Forms',
