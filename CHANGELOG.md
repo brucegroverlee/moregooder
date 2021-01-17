@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/brucegroverlee/moregooder/compare/v1.4.3...v1.5.0) (2021-01-17)
+
+
+### Features
+
+* **language:** add language [ch56] ([e98214c](https://github.com/brucegroverlee/moregooder/commit/e98214c542f20a069905f98242561fff6fb633e7))
+
 ### [1.4.3](https://github.com/brucegroverlee/moregooder/compare/v1.4.2...v1.4.3) (2021-01-16)
 
 
