@@ -1,5 +1,6 @@
 import React from 'react';
 import Avatar from 'react-avatar';
+import { LanguageDropdown} from './components/LanguageDropdown/LanguageDropdown.controller';
 
 interface IHeaderHtmlProps {}
 
@@ -25,30 +26,7 @@ export const HeaderHtml: React.FunctionComponent<IHeaderHtmlProps> = (props) => 
                         </ul>
                       </div>
                       <ul className="nav navbar-nav float-right">
-                        <li className="dropdown dropdown-language nav-item">
-                          <a className="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i className="flag-icon flag-icon-us"></i>
-                            <span className="selected-language">English</span>
-                          </a>
-                          <div className="dropdown-menu" aria-labelledby="dropdown-flag">
-                            <a className="dropdown-item" href="#" data-language="en">
-                              <i className="flag-icon flag-icon-us mr-50"></i> 
-                              English
-                            </a>
-                            <a className="dropdown-item" href="#" data-language="fr">
-                              <i className="flag-icon flag-icon-fr mr-50"></i> 
-                              French
-                            </a>
-                            <a className="dropdown-item" href="#" data-language="de">
-                              <i className="flag-icon flag-icon-de mr-50"></i> 
-                              German
-                            </a>
-                            <a className="dropdown-item" href="#" data-language="pt">
-                              <i className="flag-icon flag-icon-pt mr-50"></i> 
-                              Portuguese
-                            </a>
-                          </div>
-                        </li>
+                        <LanguageDropdown/>
                         <li className="dropdown dropdown-user nav-item">
                           <a className="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                             <div className="user-nav d-sm-flex d-none">
