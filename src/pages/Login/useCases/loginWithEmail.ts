@@ -1,18 +1,21 @@
 import { IAuthService } from './ports/IAuthService';
+import { IUserService } from '../../shared/useCases/ports/IUserService';
 import { ILoginPresenter } from './ports/ILoginPresenter';
 
 export function loginWithEmail(
   authService: IAuthService,
+  userService: IUserService,
   presenter: ILoginPresenter
 ) {
   return async (form: { email: string; password: string}): Promise<void> => {
     try {
       presenter.startLoading();
-      const { error, user } = await authService.authenticate(form);
+      const { error, token } = await authService.authenticate(form);
       if (error) {
         presenter.showError(error);
       } else {
-        presenter.startSession(user!);
+        const { user, } = await userService.startSession(token!);
+        presenter.startSession(token!, user!);
       }
       return;
     } catch (error) {
