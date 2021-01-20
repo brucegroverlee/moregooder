@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/brucegroverlee/moregooder/compare/v1.5.0...v1.6.0) (2021-01-20)
+
+
+### Features
+
+* **session:** user session [ch57] ([3f87069](https://github.com/brucegroverlee/moregooder/commit/3f870699dd883a956fb0f030bdc48ac38c6fe33e))
+
 ## [1.5.0](https://github.com/brucegroverlee/moregooder/compare/v1.4.3...v1.5.0) (2021-01-17)
 
 
