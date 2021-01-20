@@ -3,16 +3,16 @@ import { IAuthService } from '../useCases/ports/IAuthService';
 export class GoogleAuthService implements IAuthService {
   authenticate(): Promise<{
     error?: any;
-    user?: IUser;
+    token?: string;
   }> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve({
-          user: {
+          token: JSON.stringify({
           id: 12345,
           name: 'Grover',
           email: 'grover@gmail.com',
-        }});
+        })});
       }, 1500);
     });
   }

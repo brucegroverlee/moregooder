@@ -3,17 +3,17 @@ import { IAuthService } from '../useCases/ports/IAuthService';
 export class EmailAuthService implements IAuthService {
   authenticate(form: { email: string; password: string }): Promise<{
     error?: string;
-    user?: IUser;
+    token?: string;
   }> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         if (form.email==='grover@email.com' && form.password==='1234') {
           resolve({
-            user: {
+            token: JSON.stringify({
             id: 12345,
             name: 'Grover',
-            email: 'grover@gmail.com',
-          }});
+            email: 'grover@email.com',
+          })});
         } else {
           resolve({
             error: 'The user doesn\'t exist or the password is invalid.'});

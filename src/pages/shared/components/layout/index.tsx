@@ -1,8 +1,8 @@
-import React, { lazy } from 'react';
+import React from 'react';
 
 import { Footer } from '../Footer/Footer';
-const Header = lazy(() => import('../Header/Header.controller'));
-const SideMenu = lazy(() => import('../SideMenu/SideMenu.controller'));
+import { HeaderController as Header } from '../Header/Header.controller';
+import { SideMenuController as SideMenu } from '../SideMenu/SideMenu.controller';
 
 
 function setBody() {
@@ -24,16 +24,6 @@ const Layout: React.FunctionComponent = (props) => {
       <Footer/>
     </React.Fragment>
   );
-}
-
-export const layout = (Component: React.ComponentType): React.FunctionComponent => {
-  return () => {
-    return(
-      <Layout>
-        <Component/>
-      </Layout>
-    );
-  }
 }
 
 export default Layout;
